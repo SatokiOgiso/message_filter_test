@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop_key" output="screen"/>
+    <node pkg="message_filters_test" type="twist_add_timestamp.py" name="twist_stamp_add"/>
+    <node pkg="message_filters_test" type="pose_add_timestamp.py" name="pose_stamp_add"/>
+    <node pkg="message_filters_test" type="time_synchronizer_test.py" name="timesync" output="screen"/>
+
+</launch>
